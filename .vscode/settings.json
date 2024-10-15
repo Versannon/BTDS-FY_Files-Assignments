@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "Comparison.C": "cpp"
+        "Comparison.C": "cpp",
+        "Logic_OR.C": "cpp",
+        "LogicOP.C": "cpp",
+        "Logic_AND.C": "cpp",
+        "Logic_NOT.C": "cpp"
     }
 }
