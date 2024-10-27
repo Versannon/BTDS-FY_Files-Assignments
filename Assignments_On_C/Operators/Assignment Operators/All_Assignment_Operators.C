@@ -2,36 +2,36 @@
 
 int main() 
 {
-  int x = 10;
+  int x = 40;
 
-  x = 5;
+  x = 10;
   printf("x = %d\n", x);
 
-  x += 5;
+  x += 10;
   printf("x = %d\n", x);
 
-  x -= 5;
+  x -= 10;
   printf("x = %d\n", x);
 
-  x *= 2;
+  x *= 4;
   printf("x = %d\n", x);
 
-  x /= 2;
+  x /= 4;
   printf("x = %d\n", x);
 
-  x %= 3;
+  x %= 9;
   printf("x = %d\n", x);
 
-  x &= 3;
+  x &= 9;
   printf("x = %d\n", x);
 
-  x |= 5;
+  x |= 10;
   printf("x = %d\n", x);
 
-  x ^= 5;
+  x ^= 10;
   printf("x = %d\n", x);
 
-  x <<= 2;
+  x <<= 4;
   printf("x = %d\n", x);
 
   x >>= 1;

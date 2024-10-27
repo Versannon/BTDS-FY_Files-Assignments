@@ -25,6 +25,7 @@
         "Bitwise_NOT.C": "cpp",
         "Bitwise_XOR.C": "cpp",
         "Bitwise_left_right_shift.C": "cpp",
-        "All_Assignment_Operators.C": "cpp"
+        "All_Assignment_Operators.C": "cpp",
+        "Game.C": "cpp"
     }
 }
