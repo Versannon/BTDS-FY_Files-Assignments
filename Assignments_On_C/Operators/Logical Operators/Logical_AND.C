@@ -7,7 +7,7 @@ int main() {
     if (x > 0 && y > 0) {
         printf("Both numbers are greater than 0.\n");
     } else {
-        printf("At least one number is not greater than 0.\n");
+        printf("Neither one number is not greater than 0.\n");
     }
 
     return 0;
