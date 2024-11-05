@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  int grade = 80;
+  int grade;
+
+  printf("Enter your grade: ");
+  scanf("%d", &grade); // Get the grade from the user
 
   if (grade >= 90) {
     printf("A\n");
