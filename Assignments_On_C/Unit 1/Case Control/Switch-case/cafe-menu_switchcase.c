@@ -3,7 +3,6 @@
 int main() {
   int sel, num, total = 0;
   char resel, billChoice;
-
   do {
     printf("\nCafe Menu:\n");
     printf("1. Tea - 15/- \n");
