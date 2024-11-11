@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int matrix[2][3] = {{1, 2, 3}, {8, 1, 7}};
     int i,j;
     printf("Printing a Matrix\n\n");
