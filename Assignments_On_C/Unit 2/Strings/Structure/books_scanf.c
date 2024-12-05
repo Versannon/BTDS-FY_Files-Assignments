@@ -14,13 +14,13 @@ int main()
 	int num;
 	struct Books Book1;
 	{
-		printf("Give Book 1 Title: ");
+		printf("Give Book 1 Title: \n");
         scanf("%s",&Book1.Title);
-		printf("Give Book 1 Author: ");
+		printf("Give Book 1 Author: \n");
         scanf("%s",&Book1.Author);
-		printf("Give Book 1 Id: ");
+		printf("Give Book 1 Id: \n");
         scanf("%d",&Book1.Id);
-		printf("Give Book 1 Price: ");
+		printf("Give Book 1 Price: \n");
         scanf("%d",&Book1.Price);
 	};
 	printf("Enter The Book Id :",num);
