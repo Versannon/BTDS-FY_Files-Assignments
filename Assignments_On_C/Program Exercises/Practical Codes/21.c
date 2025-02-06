@@ -1,17 +1,11 @@
-/*Write a C program to display a pattern like a right-angled triangle using asterisks
-(*). Also, explain the logic of the program.*/
+#include <stdio.h>
 
-#include<stdio.h>
-
-int main()
-{
-    int i,j,num;
-    printf("Enter The Number Of Rows: ");
-    scanf("%d",&num);
-    for(i=0;i<=num;i++)
-    {
-        for(j=1;j<=i;j++)
-        {
+int main() {
+    int i, j, num;
+    printf("Enter the number of rows: ");
+    scanf("%d", &num);
+    for (i = 1; i <= num; i++) {
+        for (j = 1; j <= i; j++) {
             printf("* ");
         }
         printf("\n");
@@ -19,12 +13,16 @@ int main()
     return 0;
 }
 /*
-1: declaring the variables i,j,num.
-2: using the printf and scanf function to prompt the user to enter the number of rows.
-3: using the for loop to iterate through the rows.
-4: first for loop is used to iterate through the rows and has
-the \n character to move to the next line after each iteration.
-5: the second for loop is used to print the asterisks in each row.
-6: the printf function there is used to print the asterisks.
-7: the program returns 0 to indicate that the program executed successfully.
+Explanation of the program:
+- The program displays a pattern like a right-angled triangle using asterisks (*).
+- It includes the following steps:
+  - Declares the variables i, j, and num.
+  - Prompts the user to enter the number of rows for the triangle.
+  - Reads the number of rows from the user.
+  - Uses a nested for loop to print the pattern:
+    - The outer loop runs from 1 to num (inclusive) to handle the number of rows.
+    - The inner loop runs from 1 to i (inclusive) to handle the number of columns in each row.
+    - In each iteration of the inner loop, an asterisk followed by a space is printed.
+    - After the inner loop completes, a newline character is printed to move to the next row.
+  - Returns 0 to indicate that the program executed successfully.
 */

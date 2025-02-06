@@ -1,101 +1,82 @@
-/*
-Write a C program to create and display a food menu card, allowing the user to
-place an order, modify their order, adjust quantities, and view the total bill after
-any changes.
-*/
-#include<stdio.h>
-int main()
-{
-    int select, quantity, total = 0;
-    char reselect, billChoice;
-    do
-    {
+#include <stdio.h>
+
+int main() {
+    int total = 0;
+    char resel;
+
+    do {
+        int choice, quantity;
         printf("\nCafe Menu:\n");
         printf("1. Tea - 15/- \n");
-        printf("2. Iced Tea - 60/- \n");
-        printf("3. Coffee - 30/- \n");
-        printf("4. Latte - 50/- \n");
-        printf("5. cappuccino - 90/- \n");
-        printf("6. Macchiato - 120/- \n");
-        printf("7. Bagels with cream cheese - 145/- \n");
-        printf("8. Egg and cheese - 100/- \n");
-        printf("9. Croissants - 30/- \n");
-        printf("10. Ice-cream - 30/- \n");
-        printf("Enter your choice (1-10): ");
-        scanf("%d", &select);
+        printf("2. Coffee - 30/- \n");
+        printf("3. Sandwich - 50/- \n");
+        printf("4. Cappuccino - 50/- \n");
+        printf("5. Croissant - 70/- \n");
+        printf("6. Ice-cream - 30/- \n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        printf("Enter quantity: ");
+        scanf("%d", &quantity);
 
-        if(select <= 10 && select >= 1)
-        {
-            switch (select)
-            {
+        if (choice >= 1 && choice <= 6) {
+            switch (choice) {
                 case 1:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 15 * quantity;
-                    break;
-                case 2:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 60 * quantity;
-                    break;
-                case 3:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 30 * quantity;
-                    break;
-                case 4:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
                     total += 50 * quantity;
                     break;
+                case 2:
+                    total += 30 * quantity;
+                    break;
+                case 3:
+                    total += 20 * quantity;
+                    break;
+                case 4:
+                    total += 40 * quantity;
+                    break;
                 case 5:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 90 * quantity;
+                    total += 60 * quantity;
                     break;
                 case 6:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 120 * quantity;
-                    break;
-                case 7:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 145 * quantity;
-                    break;
-                case 8:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 100 * quantity;
-                    break;
-                case 9:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 30 * quantity;
-                    break;
-                case 10:
-                    printf("Enter quantity: ");
-                    scanf("%d", &quantity);
-                    total += 30 * quantity;
+                    total += 70 * quantity;
                     break;
             }
-        printf("Do you want to order anything else? (y/n): ");
-        scanf(" %c", &reselect);
-        }
-
-        else
-        {
-            printf("Error! Please select from (1-10) or type 'Y' to generate bill: ");
+            printf("Do you want to order anything else? (y/n): ");
+            scanf(" %c", &resel);
+        } else { // Invalid choice
+            printf("Error! Please select from (1-6) or type 'Y' to generate bill: ");
+            char billChoice;
             scanf(" %c", &billChoice);
-            if (billChoice == 'Y')
-            {
-                reselect = 'n';
+            if (billChoice == 'Y') {
+                resel = 'n'; // Exit the loop if user wants to generate the bill
             }
         }
-    }
+    } while (resel == 'y');
 
-    while (reselect == 'y');
     printf("\nYour Bill:\n");
     printf("Total: %d/- \n", total);
+
     return 0;
 }
+
+/*
+Explanation of the program:
+- The program simulates a simple billing system for a menu with six items.
+- It includes the following steps:
+  - Declares variables for the total bill amount and a character to reselect items.
+  - Uses a do-while loop to allow the user to select items and quantities multiple times.
+  - Inside the loop:
+    - Prompts the user to enter their choice of item from the menu.
+    - Reads the user's choice.
+    - Prompts the user to enter the quantity of the selected item.
+    - Reads the quantity.
+    - Checks if the user's choice is valid (between 1 and 6):
+      - If valid, uses a switch statement to add the cost of the selected item (based on its price and quantity) to the total bill.
+      - Prompts the user to decide if they want to order anything else.
+      - Reads the user's decision.
+    - If the user's choice is invalid:
+      - Prompts the user to select a valid choice or type 'Y' to generate the bill.
+      - Reads the user's decision.
+      - If the user types 'Y', sets the reselect variable to 'n' to exit the loop.
+  - The loop continues as long as the user enters 'y' to reselect items.
+  - After exiting the loop, prints the total bill amount.
+  - Returns 0 to indicate that the program executed successfully.
+*/
