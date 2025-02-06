@@ -4,7 +4,7 @@
 struct Student {
     int id;
     char name[50];
-    float grade;
+    float marks;
 };
 
 void write_records(const char *filename, struct Student *students, int n) {
@@ -37,7 +37,7 @@ void read_records(const char *filename) {
     struct Student student;
     printf("\nStudent Records:\n");
     while (fread(&student, sizeof(struct Student), 1, file)) {
-        printf("ID: %d, Name: %s, Grade: %.2f\n", student.id, student.name, student.grade);
+        printf("ID: %d, Name: %s, Marks: %.2f\n", student.id, student.name, student.marks);
     }
     fclose(file);
 }
@@ -57,7 +57,7 @@ int main() {
         printf("Name: ");
         scanf(" %[^\n]", students[i].name);
         printf("Grade: ");
-        scanf("%f", &students[i].grade);
+        scanf("%f", &students[i].marks);
     }
 
     write_records(filename, students, n);
@@ -70,7 +70,7 @@ int main() {
     printf("Name: ");
     scanf(" %[^\n]", new_student.name);
     printf("Grade: ");
-    scanf("%f", &new_student.grade);
+    scanf("%f", &new_student.marks);
 
     append_record(filename, new_student);
     read_records(filename);

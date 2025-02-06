@@ -15,7 +15,7 @@ int main() {
         exit(1);
     }
 
-    printf("Enter the text (press Ctrl+D to end input): ");
+    printf("Enter the text (press Ctrl+z to end input): ");
     getchar(); // To consume the newline character left by scanf
     while ((ch = getchar()) != EOF) {
         putc(ch, fp);
