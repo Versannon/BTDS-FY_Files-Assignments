@@ -5,6 +5,11 @@ char* insertSubstring(char mainStr[], char subStr[], int position) {
     static char result[200];
     int i, j = 0;
 
+    if (position > strlen(mainStr)) {
+        printf("Position is out of bounds.\n");
+        return mainStr;
+    }
+
     for (i = 0; i < position; i++) {
         result[i] = mainStr[i];
     }
@@ -24,6 +29,11 @@ char* insertSubstring(char mainStr[], char subStr[], int position) {
 char* deleteCharacters(char str[], int position, int n) {
     static char result[200];
     int i, j = 0;
+
+    if (position + n > strlen(str)) {
+        printf("Position and number of characters to delete are out of bounds.\n");
+        return str;
+    }
 
     for (i = 0; i < position; i++) {
         result[j++] = str[i];
@@ -70,12 +80,14 @@ Explanation of the program:
 - It includes the following steps:
   - Defines a function `insertSubstring` to insert a sub-string into a main string:
     - Declares a static resultant string to store the result after insertion.
+    - Checks if the position is out of bounds.
     - Copies characters from the main string up to the insertion position.
     - Copies characters from the sub-string.
     - Copies the remaining characters from the main string.
     - Null-terminates the resultant string and returns it.
   - Defines a function `deleteCharacters` to delete n characters from a given position in a string:
     - Declares a static resultant string to store the result after deletion.
+    - Checks if the position and number of characters to delete are out of bounds.
     - Copies characters from the string up to the deletion position.
     - Skips n characters from the position.
     - Copies the remaining characters from the string.
