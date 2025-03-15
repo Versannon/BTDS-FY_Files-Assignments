@@ -1,4 +1,2 @@
-x = 10
-y = 10
-z = x + y
-print(z)
+x, y = 10, 10
+print(x + y, x - y, x / y, x * y, sep="\n")
