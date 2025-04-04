@@ -1,0 +1,67 @@
+🎮 Game Overview
+
+- Title: (TBD)
+- Genre: Action, Story-driven, First-Person Shooter (FPS)
+- Mode: Primarily Single-player (Multiplayer may be added later)
+- Core Objective: Progress through missions to reach your "Final Destination"
+- Gameplay Style:
+  - Real-time action
+  - Mission-based structure
+  - Story-driven progression
+  - Optional Free-Roam Mode unlocked after completing story mode
+  - FPS with optional 2D mode
+  - Camera follows the player at all times
+  - Task: Navigate a "W" path on the screen, starting at the top left and ending at the right end of the "W"
+  - Upon completing the task, a pop-up displays "You WIN!!!" and the game closes in 7 seconds
+
+🕹️ Game Features
+
+1. Graphics:
+   - Realistic, slightly stylized
+   - Supports both 3D and 2D modes (2D optional)
+
+2. Combat & Difficulty Levels:
+   - Real-time combat
+   - Customizable difficulty levels:
+     - Newbie
+     - Rookie
+     - Veteran
+     - General
+     - Intermediate
+     - Ruthless (Hardest)
+
+3. Platforms:
+   - Primary: Windows
+   - Future support planned for Android
+   - With crossplay support between Windows and Android (once multiplayer is added)
+
+4. Controls:
+   - Windows: Keyboard + Mouse
+   - Android (planned): Touch controls
+
+5. Post-Story Features:
+   - Free-roam mode unlocked after story completion
+   - Possibly new missions or challenges in free-roam
+
+6. Title Screen:
+   - Includes "Play" and "Close" options
+
+7. Monetization:
+   - Ads between level loading screens
+   - Free on Steam for a limited time
+   - Then priced at ₹150
+
+8. Development Setup:
+   - Solo developer
+   - Estimated 2–3 hours/day (excluding Saturdays and Sundays)
+   - Artist may be hired later if the game is financially successful
+
+💻 Your Hardware Specifications
+
+- Device Name: DESKTOP-IPVOQTP
+- Processor: Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+- Installed RAM: 12.0 GB
+- Graphics Card: NVIDIA GTX 950M
+- System Type: 64-bit Operating System, x64-based Processor
+- Touch Support: No pen or touch input
+- Available Storage: ~30 GB free
