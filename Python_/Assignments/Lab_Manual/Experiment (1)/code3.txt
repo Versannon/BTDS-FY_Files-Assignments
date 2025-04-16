@@ -1,0 +1,6 @@
+AIM: To swap two numbers entered by the user.
+Objective: To understand variable assignment and swapping in Python.
+Theory: Swapping involves exchanging the values of two variables without using a third variable.
+Program: (no need to print the code here.)
+Output: (no need to give output here.)
+Explanation: The program swaps the values of two variables using tuple unpacking and prints the swapped values.
