@@ -1,0 +1,38 @@
+Q. What is Bio python?
+
+Bio python is an open-source collection of python tools used for computational biology and bioinformatics.
+It provides functionality for:
+->Reading and writing bioinformatics file formats;
+    -FASTA
+    -GENBANK,etc
+->performing sequence analysis
+->accessing online biological databases (e.g., NCBI)
+->Working with biological structures and alignments
+
+Key Features of Bio-python:
+
+    -> Feature description.
+    -> Sequence handling:
+        -Represent and manipulate DNA, RNA or protein sequences.
+    -> File parsing:
+        -supports a wide range of formats, such as;
+        ->FASTA, GENBANK,etc.
+    -> NCBI access.
+        -Fetch sequences and run BLAST searches.
+    -> Structural Biology:
+        -Parse and analyze protein structures using PDB.
+    -> Alignments:
+        -Read, Write and manipulate sequence alignments.
+    -> Graphics:
+        -Plot Graphical content, codon uses and visualize genomic features.
+
+Modules used in Biopython:
+
+    -> Bio.Seq: for sequence manipulation and analysis.
+    -> Bio.SeqIO: for reading and writing sequence files in various formats.
+    -> Bio.Align: for working with sequence alignments.
+    -> Bio.PDB: for parsing and analyzing protein structures.
+    -> Bio.Entrez: for accessing NCBI databases and retrieving sequences.
+    -> Bio.Blast: for performing BLAST searches.
+    -> Bio.Graphics: for creating graphical representations of biological data.
+    -> Bio.Cluster: for clustering biological data.
