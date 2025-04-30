@@ -1,6 +1,0 @@
-AIM: To check whether a given number is even or odd.
-Objective: To understand the use of conditional statements in Python.
-Theory: A number is even if it is divisible by 2; otherwise, it is odd.
-Program: (no need to print the code here.)
-Output: (no need to give output here.)
-Explanation: The program checks the remainder when the number is divided by 2 and prints whether it is even or odd.

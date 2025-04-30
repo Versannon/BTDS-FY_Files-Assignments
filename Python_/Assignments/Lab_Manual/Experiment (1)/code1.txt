@@ -1,6 +1,0 @@
-AIM: To print "Hello, World!" to the console.
-Objective: To understand the basic syntax of Python and the use of the `print()` function.
-Theory: The `print()` function is used to display output in Python.
-Program: (no need to print the code here.)
-Output: (no need to give output here.)
-Explanation: The program demonstrates the simplest Python code to print a message to the console.

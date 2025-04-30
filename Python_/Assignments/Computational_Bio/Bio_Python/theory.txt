@@ -1,0 +1,56 @@
+Questions:
+
+Q.1: Why do we need statistical function in python?
+-> Understanding Data:
+    a) Raw data is useless without summarizing.
+    b) Statistical functions like mean, median, sd, etc. help us to summarize, understand and interpret large datasets.
+    c) e.g., Instead of looking 10000 salary entries, you can just look at mean salary range and sd to understand the spread.
+
+-> Making informed decisions:
+    a) In fields like healthcare, finance, etc., statistical analysis helps in risk assessment.
+    b) Data-driven decisions lead to better outcomes.
+    c) Libraries like numpy, pandas, and scipy are optimized for speed & accuracy.
+
+-> Handling big datasets quickly:
+    a) Python can work with large amounts of data.
+    b) Statistical functions allow you to compute results in seconds (instead of manual calculations, which would take days).
+    c) e.g., Numpy and pandas are optimized for performance and can handle large datasets efficiently.
+    d) Libraries like Dask can also be used for parallel computing on large datasets.
+
+-> Data cleaning and pre-processing:
+    a) Before building any machine learning model or visualization, we must check for missing values, outliers, skewness, etc.
+    b) Statistical measures detect problems in data.
+    c) e.g., A very high standard deviation might signal outliers that you should remove.
+
+-> Comparing datasets:
+    a) Suppose you have scores from two different exams, you can use mean, variance & skewness to compare them fairly.
+
+-> Supporting machine learning models:
+    a) Machine learning models assume that data has certain statistical properties (like normal distribution.)
+    b) Feature engineering often uses statistics:
+        1: Mean normalization.
+        2: Standardization (Z-score, etc).
+    c) Logistic regression assumes that input features are scaled, achieved by 'SD'.
+
+-> Visualization and reporting:
+    a) Statistical summaries help us to create beautiful visualizations like :
+        1: Histogram (Show distribution).
+        2: Boxplot (Shows spread and outliers).
+        3: Bell Curves (Normal distribution).
+    b) You can't visualize smartly without understanding the underlying statistics.
+
+
+Q.2: Summary of statistical functions in python.
+
+-> Summarize data - Mean, median, mode.
+-> Understand spread - Variance, Range, Standard Deviation.
+-> Detect patterns & anomalies of data - Skewness & kurtosis.
+-> Make decisions - Comparing means and Variances.
+-> Prepare data for models - Normalization and scaling.
+-> Communicate findings - Summary reports and graphs.
+-> Libraries - Numpy, Pandas, Scipy, Matplotlib, Seaborn.
+
+
+
+* Note: Explain Q.1 and Q.2 in detail with examples.
+->

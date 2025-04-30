@@ -1,0 +1,6 @@
+AIM: To generate the Fibonacci series up to a given number of terms.
+Objective: To understand the concept of iterative loops and sequence generation in Python.
+Theory: The Fibonacci series is a sequence where each number is the sum of the two preceding ones, starting from 0 and 1.
+Program: (no need to print the code here.)
+Output: (no need to give output here.)
+Explanation: The program uses a loop to calculate and print the Fibonacci series up to the number of terms specified by the user.

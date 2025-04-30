@@ -1,6 +1,0 @@
-AIM: To calculate the factorial of a given number.
-Objective: To understand the use of loops and conditional statements in Python.
-Theory: The factorial of a number is the product of all positive integers less than or equal to that number.
-Program: (no need to print the code here.)
-Output: (no need to give output here.)
-Explanation: The program calculates the factorial using a loop and handles edge cases like negative numbers and zero.

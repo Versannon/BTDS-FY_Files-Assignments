@@ -1,0 +1,6 @@
+AIM: To take a string and an integer as input from the user and print them.
+Objective: To understand user input and output in Python.
+Theory: Python provides the `input()` function to take user input and the `print()` function to display output.
+Program: (no need to print the code here.)
+Output: (no need to give output here.)
+Explanation: The program takes a string and an integer as input and prints them using the `print()` function.
